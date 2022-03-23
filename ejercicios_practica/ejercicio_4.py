@@ -49,3 +49,5 @@ else:
 # Esta pregunta estará repetida en el Campus para que puedan
 # responder.
 # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
+
+#Porque de igual manera lo puede ordenar por número o en orden alfabético. 
