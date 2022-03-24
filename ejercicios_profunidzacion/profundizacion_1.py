@@ -22,3 +22,16 @@ si el resultado es positivo, negativo o cero.
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+numero_1 = float(input('Ingrese el primer número:\n'))
+numero_2 = float(input('Ingrese el segundo número:\n'))
+
+resta = numero_1 - numero_2
+print('El resultado de restar', numero_1, 'y', numero_2, 'es', resta)
+
+if resta > 0:
+    print(resta, 'es positivo')
+elif resta < 0:
+    print(resta, 'es negativo')
+else:
+    print(resta, 'es cero')
