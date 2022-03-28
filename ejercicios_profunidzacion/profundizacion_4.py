@@ -47,34 +47,31 @@ print('¿Cómo quiere ordenar las palabras?\n\
 Indique la opción deseada:')
 opcion = int(input())
 
-if opcion == '1':
-    print(' ')
-elif (palabra_1 > palabra_2) and (palabra_1 >= palabra_3) and (palabra_2 >= palabra_3):
-    print('El orden alfabético es:', palabra_3, '-', palabra_2, '-', palabra_1)
-elif (palabra_1 > palabra_3) and (palabra_2 >= palabra_3) and (palabra_2 >= palabra_1):
-    print('El orden alfabético es:', palabra_3, '-', palabra_1, '-', palabra_2)
-elif (palabra_3 > palabra_2) and (palabra_1 >= palabra_2) and (palabra_1 >= palabra_3):
-    print('El orden alfabético es:', palabra_2, '-', palabra_3, '-', palabra_1)
-elif (palabra_1 > palabra_2) and (palabra_3 >= palabra_2) and (palabra_3 >= palabra_1):
-    print('El orden alfabético es:', palabra_2, '-', palabra_1, '-', palabra_3)
-elif (palabra_3 > palabra_1) and (palabra_2 >= palabra_1) and (palabra_2 >= palabra_3):
-    print('El orden alfabético es:', palabra_1, '-', palabra_3, '-', palabra_2)
-elif (palabra_2 > palabra_1) and (palabra_3 >= palabra_1) and (palabra_3 >= palabra_2):
-    print('El orden alfabético es:', palabra_1, '-', palabra_2, '-', palabra_3)
-
-if opcion == '2':
-elif (len(palabra_1) > len(palabra_2)) and (len(palabra_1) >= len(palabra_3)) and (len(palabra_2) >= len(palabra_3)):
-    print('El orden en cantidad de letras es:', palabra_3, '-', palabra_2, '-', palabra_1)
-elif (len(palabra_1) > len(palabra_3)) and (len(palabra_2) >= len(palabra_3)) and (len(palabra_2) >= len(palabra_1)):
-    print('El orden  en cantidad de letras es:', palabra_3, '-', palabra_1, '-', palabra_2)
-elif (len(palabra_3) > len(palabra_2)) and (len(palabra_1) >= len(palabra_2)) and (len(palabra_1) >= len(palabra_3)):
-    print('El orden  en cantidad de letras es:', palabra_2, '-', palabra_3, '-', palabra_1)
-elif (len(palabra_1) > len(palabra_2)) and (len(palabra_3) >= len(palabra_2)) and (len(palabra_3) >= len(palabra_1)):
-    print('El orden  en cantidad de letras es:', palabra_2, '-', palabra_1, '-', palabra_3)
-elif (len(palabra_3) > len(palabra_1)) and (len(palabra_2) >= len(palabra_1)) and (len(palabra_2) >= len(palabra_3)):
-    print('El orden  en cantidad de letras es:', palabra_1, '-', palabra_3, '-', palabra_2)
-elif (len(palabra_2) > len(palabra_1)) and (len(palabra_3) >= len(palabra_1)) and (len(palabra_3) >= len(palabra_2)):
-    print('El orden  en cantidad de letras es:', palabra_1, '-', palabra_2, '-', palabra_3)
-
-else:
-    print('La opción seleccionada no es correcta')
+if opcion == 1:
+    if (palabra_1 > palabra_2) and (palabra_1 >= palabra_3) and (palabra_2 >= palabra_3):
+        print('El orden alfabético es:', palabra_3, '-', palabra_2, '-', palabra_1)
+    elif (palabra_1 > palabra_3) and (palabra_2 >= palabra_3) and (palabra_2 >= palabra_1):
+        print('El orden alfabético es:', palabra_3, '-', palabra_1, '-', palabra_2)
+    elif (palabra_3 > palabra_2) and (palabra_1 >= palabra_2) and (palabra_1 >= palabra_3):
+        print('El orden alfabético es:', palabra_2, '-', palabra_3, '-', palabra_1)
+    elif (palabra_1 > palabra_2) and (palabra_3 >= palabra_2) and (palabra_3 >= palabra_1):
+        print('El orden alfabético es:', palabra_2, '-', palabra_1, '-', palabra_3)
+    elif (palabra_3 > palabra_1) and (palabra_2 >= palabra_1) and (palabra_2 >= palabra_3):
+        print('El orden alfabético es:', palabra_1, '-', palabra_3, '-', palabra_2)
+    else:
+        print('El orden alfabético es:', palabra_1, '-', palabra_2, '-', palabra_3)
+if opcion == 2:
+    if (len(palabra_1) > len(palabra_2)) and (len(palabra_1) >= len(palabra_3)) and (len(palabra_2) >= len(palabra_3)):
+        print('El orden en cantidad de letras es:', palabra_3, '-', palabra_2, '-', palabra_1)
+    elif (len(palabra_1) > len(palabra_3)) and (len(palabra_2) >= len(palabra_3)) and (len(palabra_2) >= len(palabra_1)):
+        print('El orden  en cantidad de letras es:', palabra_3, '-', palabra_1, '-', palabra_2)
+    elif (len(palabra_3) > len(palabra_2)) and (len(palabra_1) >= len(palabra_2)) and (len(palabra_1) >= len(palabra_3)):
+        print('El orden  en cantidad de letras es:', palabra_2, '-', palabra_3, '-', palabra_1)
+    elif (len(palabra_1) > len(palabra_2)) and (len(palabra_3) >= len(palabra_2)) and (len(palabra_3) >= len(palabra_1)):
+        print('El orden  en cantidad de letras es:', palabra_2, '-', palabra_1, '-', palabra_3)
+    elif (len(palabra_3) > len(palabra_1)) and (len(palabra_2) >= len(palabra_1)) and (len(palabra_2) >= len(palabra_3)):
+        print('El orden  en cantidad de letras es:', palabra_1, '-', palabra_3, '-', palabra_2)
+    else:
+        print('El orden  en cantidad de letras es:', palabra_1, '-', palabra_2, '-', palabra_3)
+if (opcion == 0) or (opcion > 3):
+    print('La opción no es correcta')
